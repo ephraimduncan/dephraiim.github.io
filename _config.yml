@@ -1,10 +1,10 @@
 # Site Settings
-baseurl: ""
-url: "https://ephraim.github.io"
+baseurl: "/"
+url: "https://dephraiim.github.io"
 
 # Blog Settings
 theme_settings:
-  title: Duncan's Theme
+  title: Duncan's Blog
   favicon: assets/favicon.ico
 
   # Profile Settings
@@ -37,14 +37,14 @@ theme_settings:
   icons:
     email: ephraimduncan68@gmail.com
     linkedin:
-    github: ephraimduncan
+    github: dephraiim
     gitlab:
     bitbucket:
     google_plus:
-    twitter: duncan___e
+    twitter: dephraiim
     youtube: Duncan Multimedia
     facebook:
-    instagram: duncan.am.i
+    instagram: dephraiim
 
   # Disqus
   disqus_shortname:
