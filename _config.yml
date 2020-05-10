@@ -1,5 +1,5 @@
 # Site Settings
-baseurl: "/"
+baseurl: ""
 url: "https://dephraiim.github.io"
 
 # Blog Settings
@@ -57,6 +57,6 @@ paginate_path: "blog/page:num"
 sass:
   sass_dir: _sass
   style: :compressed
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 bootstrap:
   assets: true
