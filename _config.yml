@@ -11,7 +11,7 @@ theme_settings:
   profile:
     image: assets/img/smile.png
     username: Ephraim Atta-Duncan
-    description: Programmer💻 Mars🌕 Forger📝
+    description: Programmer💻 Mars🌕
     experience:
       - start: 2018-12-12
         end: Current
