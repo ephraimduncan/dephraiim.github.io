@@ -2,7 +2,7 @@
 layout: post
 title: Welcome Aboard
 subtitle: 🚀🔥
-tags: [Welcome, Intro]
+tags: [Welcome]
 author: Ephraim Atta-Duncan
 comments: True
 ---
