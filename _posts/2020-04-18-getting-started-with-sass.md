@@ -9,7 +9,7 @@ comments: False
 
 <div align="center">
   <!-- img: educative.io -->
-  <img src="/_posts/images/sass.png" alt="Sass Background">
+  <img src="/assets/img/posts/sass.png" alt="Sass Background" style="align:center;">
 </div>
 
 # Sass
@@ -94,7 +94,9 @@ There are many ways scss can be compiled into clean css code.
 - Go to the extensions panel and search for `live sass compiler`
 - Click on the Extension by Ritiwck Dey and Install it. (_Reload VS Code To Load Extension_)
 - Once the extension is installed, you need to set the location in save and the file extension.
+
   > _Location and extension is a personal preference._
+
 - Search for `settings.json` file in VS Code. Can be found in settings.
 - Add the following JSON code to enable your save location and extensions and save the changes.
 
@@ -120,7 +122,7 @@ There are many ways scss can be compiled into clean css code.
 
 - At the bottom of VS Code, a `Watch Sass` button will show. Click on it to compile your sass to css.
 
-<img src="/_posts/images/watch-sass.png" align="center">
+<img src="/assets/img/posts/watch-sass.png" align="center">
 <br><br>
 
 > _After the button is clicked, the extension will recompile the scss to css on every save_.

@@ -9,7 +9,7 @@ comments: False
 
 <div align="center">
   <!-- img: educative.io -->
-  <img src="/_posts/images/sass.png" alt="Sass Background">
+  <img src="/assets/img/posts/sass.png" alt="Sass Background" class="width-80">
 </div>
 
 # Sass
