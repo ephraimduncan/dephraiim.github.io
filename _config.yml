@@ -1,40 +1,53 @@
 # Site Settings
 baseurl: ""
-url : "https://naye0ng.github.io"
+url: "https://ephraim.github.io"
 
 # Blog Settings
-theme_settings :
-  title : Grape Theme
-  favicon : assets/favicon.ico
+theme_settings:
+  title: Duncan's Theme
+  favicon: assets/favicon.ico
 
   # Profile Settings
-  profile :
-    image : assets/img/smile.png
-    username : Nayeong Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
-    experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
-    skills : 
-      - skill : HTML5 & CSS
-        value : 85  # Percent value
-        
+  profile:
+    image: assets/img/smile.png
+    username: Ephraim Atta-Duncan
+    description: Programmer💻 Mars🌕 Forger📝
+    experience:
+      - start: 2018-12-12
+        end: Current
+        experience: Started Programming, Coder
+      - start: 2017-05-03
+        end: Current
+        experience: Started Photoshop, Baby Designer
+    skills:
+      - skill: HTML5 & CSS
+        value: 80 # Percent value
+      - skill: Python
+        value: 60 # Percent value
+      - skill: JavScript
+        value: 40 # Percent value
+      - skill: React and Vue
+        value: 45 # Percent value
+      - skill: Sass
+        value: 90 # Percent value
+      - skill: Adobe Photoshop
+        value: 70 # Percent value
+
   # Icons
-  icons :
-    email:  # Full email address, e.g. "sample@google.com"
-    linkedin:  # Full URL 
-    github: naye0ng
-    gitlab: 
-    bitbucket: 
+  icons:
+    email: ephraimduncan68@gmail.com
+    linkedin:
+    github: ephraimduncan
+    gitlab:
+    bitbucket:
     google_plus:
-    twitter:
-    youtube:
+    twitter: duncan___e
+    youtube: Duncan Multimedia
     facebook:
-    instagram:
+    instagram: duncan.am.i
 
   # Disqus
-  disqus_shortname :
+  disqus_shortname:
 
 # Pagination
 paginate: 5
