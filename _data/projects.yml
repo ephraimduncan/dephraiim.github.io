@@ -2,7 +2,7 @@
     print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
     modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
     url: https://github.com/dephraiim # Full URL
-    image: chemistry.png# path: assets/project/
+    image: chemistry.png # path: assets/project/
     date: 2020.04.10 - Developing
     title: Glow CSS
     summary: An awesome mini CSS framework for making neon texts!
