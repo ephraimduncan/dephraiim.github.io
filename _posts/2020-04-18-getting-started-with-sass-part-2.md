@@ -23,8 +23,9 @@ In the earlier part of this post, I talked about what Sass is and how to get sta
 - [Variables](#sass-variables)
 - [Nesting](#sass-nesting)
 - [Mixins](#sass-mixins)
+- [Functions](#sass-functions)
 - [Modules](#sass-modules)
-- [Inheritance](#sass-extend)
+- [Inheritance](#sass-inheritance)
 - [Control Flow](#sass-control-flow)
 
 ### Sass Variables
@@ -215,4 +216,164 @@ button {
 
 #### Sass Functions
 
-Sass Functions look similiar to mixins but different.
+Sass Functions look similiar to mixins but different. In Sass, mixins return a block of code, chunk of code that can be used over and over again. For functions, they are made to return a specific value. Single values, not blocks of code. Functions have a return statement, just like javascript but mixins do not.
+
+The syntax for creating the function is as follows.
+
+```scss
+@function <name>(<parameters...>) {
+  // function code
+  @return <return statement>;
+}
+```
+
+To use the function, in a code, you just call the function name and apply the arguments to it.
+
+```scss
+// Function To Change Rem to Pixils
+
+$base-size: 16;
+
+@function toRem($size) {
+  @return $size / $base-size;
+}
+
+.card {
+  font-size: toRem(200) * 1rem;
+}
+```
+
+> Functions are mainly used for calculations. For dynamic calculations od sizes, lengths, widths and even colours. Sass also has inbuilt functions to perform some actions.
+
+### Sass Modules
+
+Modules are divisions of code into other sections amd partials. It prevents DRY code. Sass implements this system to make it easy to maintain the code and faster to debug. You create a main scss file, then you create a partial file, beginning the file name with `_`, then you import the partial into the main file.
+
+> The partial can be located anywhere as long as you link the correct path in the main file.
+
+To use a partial in a main file, use `@import "<file_name>";` _Do not add the `_`and the`.scss` when using the import. Sass identifies it automatically as long as you have the correct path.\_
+
+```scss
+// main.scss
+
+@import "variables";
+@import "resets";
+```
+
+```scss
+// _variables.scss
+$font-size: 20px;
+$font-weight: 300;
+$primary-color: #aaa;
+$light: #fff;
+$dark: #333;
+$border: 2px solid #444;
+```
+
+```scss
+// _resets.scss
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Fira", "Roboto", sans-serif;
+  color: white;
+}
+```
+
+With the above example, Sass will insert the `variables` and the `resets` partial in a single css file for the brower to render easily.
+
+<br>
+Sass also applies `@use` for importing a module.`@use` and ``@import`are similiar but there are differences.`@import`is already a default css functions which makes it sometimes confusing. For`@use`, you do not neccesarily insert the whole code but you can access specific functions,mixins or variables in the code.
+
+```scss
+// _variables.scss
+$font-size: 20px;
+$font-weight: 300;
+$primary-color: #aaa;
+$light: #fff;
+$dark: #333;
+$border: 2px solid #444;
+```
+
+```scss
+// main.scss
+@use "variables";
+
+p {
+  font-size: variables.font-size;
+  font-weight: variables.font-weight;
+  color: variables.light;
+}
+```
+
+You can also change the default value in a variable when you import it in the code.
+
+```scss
+// _variables.scss
+$primary: #aaa !default;
+$light: #fff !default;
+$dark: #333;
+$_moon: #1e1e1e;
+```
+
+```scss
+// main.scss
+@use "variables" with (
+  $light: #eee,
+  $dark: #444
+);
+// Changes the default value set in the `variable` file,
+
+.card {
+  background: variables.dark;
+  color: variables.light;
+  &:hover {
+    background: variables.primary;
+    // The Value of this will not change since
+    // you did not set a new value when it was imported
+  }
+}
+```
+
+> To configure the values in a file,`!default` must be set after it to make it available for configuration. `@use` brings a new feature when you can make a variable private to avoid it from being used or modified. To make a variable private, `-` or `_` must be prefixed to it and it makes private.
+
+### Sass Inheritance.
+
+Sass allows you to inherit a block of code in a specific selector. It extends the same code into the new selector.
+
+`@extend` is used.`@extend <selector>` is the syntax for extending a block into a new one.
+
+```scss
+.p {
+  font-size; 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+article {
+  @extend .p
+  // Extends the code here.
+}
+
+```
+
+The compiled CSS will look like this.
+
+```css
+.p {
+  font-size; 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+article {
+  font-size; 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+```
+
+> Values extended can be overidden. Just declare the property again with another value and that's it.
+
+<br><br>
+Thanks For Reading. Please check put my youtube channel. [Awesome Web Development](https://youtu.be/Ax_NX1w00AQ).
