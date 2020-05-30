@@ -2,11 +2,11 @@
     print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
     modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
     url: https://github.com/dephraiim # Full URL
-    image: chemistry.png # path: assets/project/
+    image: # path: assets/project/
     date: 2020.04.10 - Developing
     title: Glow CSS
-    summary: An awesome mini CSS framework for making neon texts!
-    description: You can use it easily without affecting any default styles. You can customize it easily.
+    summary: Make Texts on webpages glowww....
+    description: An awesome mini front-end toolkit for making neon texts!
     # contents :
     #     - title : 1. 블로그 첫 화면 구성
     #       image : home.png
@@ -36,3 +36,13 @@
     title: Nightly
     summary: An awesome dark theme for vscode.
     description: A dark theme for night coders. Easy to use with colourful features.
+
+- project:
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    url: https://github.com/dephraiim/markdown # Full URL
+    image: # path: assets/project/
+    date: 2020.05.26 - Developing
+    title: Markdown UI
+    summary: No CSS Required. Just HTML.
+    description: A mini no-class front-end toolkit to replicate Github markdown styling.
