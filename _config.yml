@@ -24,10 +24,12 @@ theme_settings:
         value: 80 # Percent value
       - skill: Python
         value: 60 # Percent value
-      - skill: JavScript
-        value: 40 # Percent value
-      - skill: React and Vue
+      - skill: JavaScript
+        value: 60 # Percent value
+      - skill: React
         value: 45 # Percent value
+      - skill: Vue
+        value: 20 # Percent value
       - skill: Sass
         value: 90 # Percent value
       - skill: Adobe Photoshop
