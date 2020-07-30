@@ -47,15 +47,15 @@
     summary: No CSS Required. Just HTML.
     description: A mini no-class front-end toolkit to replicate Github markdown styling.
 
-- project:
-    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
-    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
-    url: https://github.com/dephraiim/chucknorris # Full URL
-    image: # path: assets/project/
-    date: 2020.06.14 - Developing
-    title: Chuck Norris Joke Bot On Twitter
-    summary: The Best
-    description: Geek Related Jokes
+# - project:
+#     print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+#     modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+#     url: https://github.com/dephraiim/chucknorris # Full URL
+#     image: # path: assets/project/
+#     date: 2020.06.14 - Developing
+#     title: Chuck Norris Joke Bot On Twitter
+#     summary: The Best
+#     description: Geek Related Jokes
 
 - project:
     print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
