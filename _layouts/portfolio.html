@@ -36,7 +36,7 @@ layout: page
         {% endfor %}
       </ul>
     </article>
-    <article class="skills col-12 col-md-6">
+    {% comment %} <article class="skills col-12 col-md-6">
       <p class="title">SKILLS</p>
       <ul class="skill-list">
         {% for _ in profile.skills %}
@@ -50,7 +50,7 @@ layout: page
         </li>
         {% endfor %}
       </ul>
-    </article>
+    </article> {% endcomment %}
   </section>
 
   {% include projects.html %}
