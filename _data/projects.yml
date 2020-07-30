@@ -11,6 +11,16 @@
 - project:
     print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
     modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
+    url: https://github.com/dephraiim/octotrends # Full URL
+    image:
+    date: 2020.07.25
+    title: Octotrends
+    summary: 📝
+    description: Get Github Trending Repos Now!
+
+- project:
+    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'.
+    modal: True # If 'True' is selected, modal can open in 'portfolio.html'.
     url: https://github.com/dephraiim # Full URL
     image: # path: assets/project/
     date: 2020.04.10 - Developing
