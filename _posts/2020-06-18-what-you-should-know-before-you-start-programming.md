@@ -7,7 +7,6 @@ author: Ephraim Atta-Duncan
 comments: True
 ---
 
-# Things You Should Know When You Start Programming
 
 Programming is fun and easy but a number of people who start learning (self-taught) start with full confidence and energy but after two, three weeks, even months, they quit. Some say it is difficult, others say it's plenty. Some say I don't understand and a whole lot of other things. Well, I couldn't agree more. Programming is difficult at times and it can be a bit of a mess, but everyone went through that. We all had difficulties at times, we all got stuck at one point but here we are, at least, we can call ourselves developers.
 
